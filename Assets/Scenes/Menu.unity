@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 216053609}
   - component: {fileID: 216053608}
   - component: {fileID: 216053612}
+  - component: {fileID: 216053613}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -200,7 +201,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -220,7 +221,7 @@ RectTransform:
   m_Children:
   - {fileID: 1422654182}
   - {fileID: 1174408473}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1889142515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -239,6 +240,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a320d2c1c8a244ebfbe03a8c090e67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &216053613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216053607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358adea00d1aa364ea7dc0fd2fa5df19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HighScoreDisplay: {fileID: 1174408474}
 --- !u!1 &1174408472
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,7 +811,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 216053611}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
@@ -805,5 +820,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1889142515}
-  - {fileID: 216053611}
   - {fileID: 1376400003}
